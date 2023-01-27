@@ -1,0 +1,121 @@
+/* COLORS */
+/* FONTS */
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200");
+/* FONT WEIGHTS */
+/* FONT SIZE*/
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 48;
+}
+
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Outfit", sans-serif;
+  text-decoration: none;
+}
+
+body {
+  background-color: hsl(212deg, 45%, 89%);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body .container {
+  background-color: hsl(0deg, 0%, 100%);
+  max-width: 320px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 16px;
+  border-radius: 24px;
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.25);
+}
+body .container #qr_code_container {
+  width: 288px;
+  height: 288px;
+  background-color: hsl(216deg, 95%, 58%);
+  border-radius: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body .container #qr_code_container #qr_code {
+  width: 160px;
+  height: 160px;
+}
+body .container .content {
+  margin: 0 8px;
+  text-align: center;
+  margin-bottom: 8px;
+}
+body .container .content h1 {
+  color: hsl(218deg, 44%, 22%);
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+body .container .content p {
+  color: hsl(220deg, 15%, 55%);
+  font-size: 0.875em;
+  font-weight: 400;
+}
+body .container .content p a {
+  color: hsl(218deg, 44%, 22%);
+}
+body .container #url-container {
+  margin: 0 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+body .container #url-container #url {
+  min-height: 100%;
+  flex: 1;
+  border: 0;
+  padding: 11px 12px;
+  background-color: hsl(212deg, 45%, 89%);
+  font-weight: 700;
+  outline: none;
+  color: hsl(220deg, 15%, 55%);
+  font-size: 0.875em;
+}
+body .container #url-container #url::-moz-placeholder {
+  color: hsl(220deg, 15%, 55%);
+}
+body .container #url-container #url:-ms-input-placeholder {
+  color: hsl(220deg, 15%, 55%);
+}
+body .container #url-container #url::placeholder {
+  color: hsl(220deg, 15%, 55%);
+}
+body .container #url-container .submit-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-width: 40px;
+  min-height: 100%;
+  border: 0;
+  border-left: 2px solid hsl(218deg, 44%, 22%);
+  background-color: hsl(212deg, 45%, 89%);
+  font-weight: 400;
+  color: hsl(220deg, 15%, 55%);
+  font-size: 1.3125em;
+  transition: background-color ease-in-out 0.3s, color ease-in-out 0.3s;
+}
+body .container #url-container .submit-button:hover {
+  background-color: hsl(218deg, 44%, 22%);
+  color: hsl(0deg, 0%, 100%);
+}
+body .container #url-container .submit-button.disabled {
+  pointer-events: none;
+  cursor: default;
+}/*# sourceMappingURL=style.css.map */

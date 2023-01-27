@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="css/style.css">
+
+  <title>Frontend Mentor | QR code generator</title>
+  </head>
+<body>
+
+  <div class="container">
+    <section id="qr_code_container">
+      <div id="qr_code"></div>
+    </section>
+    <section class="content">
+      <h1>This is a QR Code Generator.</h1>
+      <p>I changed the <a href="https://www.frontendmentor.io/challenges/qr-code-component-iux_sIO_H" target="_blank">challenge</a> a little bit, insert a <b>valid</b> link to generate a QR Code.</p>
+    </section>
+    <section id="url-container">
+      <input type="url" id="url" placeholder="http://linkedin.com/my-user-name" onchange="checkURL()">
+      <a href="#" onclick="getQRCode()" class="material-symbols-outlined submit-button disabled">qr_code_2</a>
+    </section>
+  </div>
+
+  <script src="qr-code-generator.js"></script>
+
+</body>
+</html>

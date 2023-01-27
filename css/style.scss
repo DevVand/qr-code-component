@@ -1,0 +1,119 @@
+@import 'design_system.scss';
+
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: $font-family;
+    text-decoration: none
+}
+
+body {
+
+    background-color: $light-gray;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .container {
+        background-color: $white;
+        max-width: 320px;
+        height: 500px;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        padding: 16px;
+        border-radius: 24px;
+        box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.25);
+
+        #qr_code_container {
+            width: 288px;
+            height: 288px;
+            background-color: $light-blue;
+            border-radius: 16px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            #qr_code {
+                width: 160px;
+                height: 160px;
+            }
+        }
+
+        .content {
+            margin: 0 8px;
+            text-align: center;
+            margin-bottom: 8px;
+            h1 {
+                color: $dark-blue;
+                font-size: $fsz-title;
+                font-weight: $w-bold;
+                margin-bottom: 8px;
+            }
+
+            p {
+                color: $grayish-blue;
+                font-size: $fsz-default;
+                font-weight: $w-normal;
+                a{
+                    color: $dark-blue;
+                }
+            }
+        }
+
+        #url-container {
+            margin: 0 8px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 40px;
+            border-radius: 8px;
+            overflow: hidden;
+
+            #url {
+                min-height: 100%;
+                flex: 1;
+                border: 0;
+                padding: 11px 12px;
+                background-color: $light-gray;
+                font-weight: $w-bold;
+                outline: none;
+                color: $grayish-blue;
+                font-size: $fsz-default;
+                &::placeholder{
+                    color: $grayish-blue;
+                }
+            }
+
+            .submit-button {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                min-width: 40px;
+                min-height: 100%;
+                border: 0;
+                border-left: 2px solid $dark-blue;
+                background-color: $light-gray;
+                font-weight: $w-normal;
+                color: $grayish-blue;
+                font-size: $fsz-default*1.5;
+                transition: background-color ease-in-out .3s, color ease-in-out .3s;
+
+                &:hover {
+                    background-color: $dark-blue;
+                    color: $white;
+                }
+
+                &.disabled {
+                    pointer-events: none;
+                    cursor: default;
+                }
+            }
+        }
+
+    }
+}

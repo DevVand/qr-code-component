@@ -1,0 +1,32 @@
+/* COLORS */
+
+$white: hsl(0, 0%, 100%);
+$light-gray: hsl(212, 45%, 89%);
+$grayish-blue: hsl(220, 15%, 55%);
+$dark-blue: hsl(218, 44%, 22%);
+$light-blue: hsl(216, 95%, 58%);
+
+/* FONTS */
+
+$font-family: 'Outfit', sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200');
+
+/* FONT WEIGHTS */
+
+$w-normal: 400;
+$w-bold: 700;
+
+/* FONT SIZE*/
+
+$fsz-default: 0.875em;
+$fsz-title: 1.25rem;
+
+
+.material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 48
+  }
