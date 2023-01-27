@@ -12,19 +12,20 @@
   </head>
 <body>
 
-  <div class="container">
+  <main class="container">
     <section id="qr_code_container">
-      <div id="qr_code"></div>
+      <div id="qr_code" class="remove" alt="qr-code"></div>
+      <div class="lds-facebook" id="loader"><div></div><div></div><div></div></div>
     </section>
     <section class="content">
       <h1>This is a QR Code Generator.</h1>
       <p>I changed the <a href="https://www.frontendmentor.io/challenges/qr-code-component-iux_sIO_H" target="_blank">challenge</a> a little bit, insert a <b>valid</b> link to generate a QR Code.</p>
     </section>
-    <section id="url-container">
-      <input type="url" id="url" placeholder="http://linkedin.com/my-user-name" onchange="checkURL()">
+    <div id="url-container">
+      <input type="url" id="url" placeholder="http://linkedin.com/my-user-name" oninput="checkURL()">
       <a href="#" onclick="getQRCode()" class="material-symbols-outlined submit-button disabled">qr_code_2</a>
-    </section>
-  </div>
+    </div>
+  </main>
 
   <script src="qr-code-generator.js"></script>
 

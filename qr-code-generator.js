@@ -19,6 +19,12 @@ document.getElementById("url").placeholder = url;
 
 
 function getQRCode() {
+    document.getElementById('qr_code').classList.add('remove');
+    document.getElementById('loader').classList.remove('remove');
+    setTimeout(function(){
+        document.getElementById('loader').classList.add('remove');
+        document.getElementById('qr_code').classList.remove('remove');
+    }, 1000)
     document.querySelector('#qr_code > img').src = api + document.getElementById("url").value
 }
 
@@ -31,3 +37,13 @@ function checkURL(){
     
 }
 
+
+
+document.querySelector("#qr_code > img").onload = function () {
+
+    setTimeout(function(){
+        document.getElementById('loader').classList.add('remove');
+        document.getElementById('qr_code').classList.remove('remove');
+    }, 1000)
+
+};
